@@ -8,6 +8,6 @@ Website links:
    
    (No responsive) - https://nihaalknight87.github.io/Fullstack-Concepts/Frontend/P1/src/pages/
 
-   (Semi Responsive) | https://nihaalknight87.github.io/Fullstack-Concepts/Frontend/P1/src_C1/pages/
+   (Semi Responsive) - https://nihaalknight87.github.io/Fullstack-Concepts/Frontend/P1/src_C1/pages/
 
-   (Full Responsive) | Coming Soon!
+   (Full Responsive) - Coming Soon!
