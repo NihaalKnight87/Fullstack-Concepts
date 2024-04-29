@@ -4,9 +4,7 @@ Fullstack-Concepts
 Website links:
 
 1) Frontend:
-
 1.1) P1:
-
 (No responsive)
 https://nihaalknight87.github.io/Fullstack-Concepts/Frontend/P1/src/pages/
 (Semi Responsive)
