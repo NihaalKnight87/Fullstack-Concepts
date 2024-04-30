@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'varta', serif, sans-serif;
+}
+
+/* Fixed Baground Responsive */
+.bg{
+   width: 100dvw;
+   height: 100dvh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+}
+.container{
+    width: 100vw;
+    height: 720px;
+    max-width: 1152px;
+    position: relative;
+    background-image: url('../../assert/bg-cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Heading Responsive */
+.wrapHeading{
+    margin: 20px 0 20px 2px;
+    padding: 12px 0 12px 17px;
+    width: auto;
+    height: auto;
+    border-width: 0 0 0 8px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wrapHeading > span{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(0.6rem, calc(0.4rem + 1vw), 1rem);
+}
+
+/* Description Responsive */
+.wrapDescription{
+    margin: 12px 500px 10px 26px;
+    height: 80px;
+    overflow: hidden;
+}
+.wrapDescription > span{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Slider Content Responsive (0) */
+.sliderProducts{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+/* Arrows (Back & Next) */
+.arrow{
+    z-index: 1;
+    padding: 150px 15px;
+    margin: 0px;
+    top: 58%;
+    position: absolute;
+    transform: translateY(-50%);
+    background: transparent;
+    font-size: 34px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.left{
+    top: 50%;
+    left: 0px;
+}
+.right{
+    top: 50%;
+    right: 0px;
+}
+
+/* Slider Content Responsive (1) */
+.wrapContent{
+    margin-top: 100px;
+    margin-left: 105px;
+    margin-right: 25px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+    align-items: center;
+}
+.wrapContent > div{
+    width: 250px;
+    height: 350px;
+    transition: transform 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.product {
+    position: relative;
+    border: 2px solid transparent;
+    background-image: none;
+    background-color: transparent;
+}
+.product:hover{
+    transition: color 0.4s ease;
+    color: rgb(194, 194, 194);
+    transition: border-color 0.9s ease;
+    border-color: black;
+}
+.productBg{
+    background-image: url('../../assert/wheel-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.productBorder{
+    border-color: rgb(184, 182, 182);
+}
+.wrapImg{
+    margin: 5px 0 0 0;
+    width: 310px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapImg > img{
+    width: 50%;
+    height: 80%;
+}
+.product > span{
+    text-align: center;
+}
+.product > span:nth-of-type(1){
+    margin-top: 15px;
+    padding: 0 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.product > span:nth-of-type(2){
+    padding: 0 10px;
+    font-size: 0.8rem;
+}
+.product > span:nth-of-type(3){
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* Responsive Break point: (Optimized single dynamic Break) */
+@media (width < 1140px) {
+    .container{
+        height: auto;
+        background-position: 0 20px;
+    }
+
+    .wrapDescription{
+        margin: 2px 30% 10px 26px;
+        height: 80px;
+        line-height: 1.2;
+    }
+    .wrapDescription > span{
+        font-size: calc(0.4rem + 1vw);
+    }
+
+    .wrapContent{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 6%;
+        margin-right: 6%;
+        gap: 3%;
+    }
+    .wrapContent > div{
+        width: 30%;
+        height: calc(100px + 20vw);
+    }
+
+    .wrapImg{
+        margin: 5px 0 0 0;
+        width: 310px;
+        height: calc(60px + 10vw);
+        pointer-events: none;
+    }
+    .wrapImg > img{
+        width: calc(15% + 10vw);
+        height: 90%;
+    }
+    .product > span:nth-of-type(1){
+        margin-top: 6%;
+        padding: 0 2%;
+        font-size: calc(0.1rem + 1vw);
+        font-weight: bold;
+    }
+    .product > span:nth-of-type(2){
+        padding: 0 2%;
+        font-size: calc(0.1rem + 1vw);
+    }
+    .product > span:nth-of-type(3){
+        font-size: calc(0.1rem + 1vw);
+        font-weight: bold;
+    }
+}
